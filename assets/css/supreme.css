@@ -1,0 +1,92 @@
+	input[type="submit"],	
+	.button {
+		position: relative;
+		display: inline-block;
+		background: #66df92;
+		color: #fff;
+		text-align: center;
+		border-radius: 0.5em;
+		text-decoration: none;
+		padding: 0.65em 3em 0.65em 3em;
+		border: 0;
+		cursor: pointer;
+		outline: 0;
+		font-weight: 300;
+		-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+	}
+
+	.cadastro{
+		background-color: #acc3ad07;
+		margin: 10%;
+	}
+
+	.config2 {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 6%;
+}
+
+.logogif{
+	width: 4%;
+}
+
+.logogif2{
+	width: 25%;
+}
+
+.h2s{
+	margin-bottom: -5%;
+}
+.logo{
+	width: 16%;
+	margin-left: -170px;
+	margin-top: -1px;
+}
+.border-right, .navbar .navbar-brand-wrapper {
+    border-right: 1px solid #929395;
+}
+.NameLogo{
+	color: #121149;
+	font-weight: bold ;
+	font-family: fantasy;
+	margin-left: -120px;
+}
+.aju{
+	margin-left: ;
+}
+.disketteIMG{
+	width: 20%;
+    margin-bottom: -4px;
+    margin-top: -1px;
+    margin-left: -12px;
+}
+.disketteCHAR{
+	font-size: 45px;
+	margin-top: -64px;
+	margin-left: 33px;
+	margin-right: -45px;
+	color: white;
+}
+.adjuste{
+	margin-left: -13px !important;
+}
+.menuCHAR{
+	font-size: 20px;
+	color: white;
+}
+.user{
+	border-radius: 100%;
+	width: 30%;
+	margin-left: 81px !important;
+}
+.fotoDePerfil{
+}
+input[type="file"] {
+    display: block;   
+    font-size: 11px;
+    float: left;
+
+}
