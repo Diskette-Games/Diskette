@@ -16,11 +16,10 @@ if ($Usuario->num_rows==0) {
 else
 {
 	while ($linha = mysqli_fetch_array($Usuario)) {
-		$usuario_session = array('id_usu' => $linha['id_usu'], 'email_usu' =>$linha['email_usu'], 'nome_usu'=> $linha['nome_usu']);
+		$usuario_session = array('id_usu' => $linha['id_usu'], 'name_tag' => $linha['name_tag'], 'sexo_usu' => $linha['sexo_usu'], 'email_usu' =>$linha['email_usu'], 'nome_usu'=> $linha['nome_usu'], 'controle_de_restricao'=> $linha['controle_de_restricao']);
 		Sessao_Diskette::EscreverSessao($usuario_session);
 
 	}
-	header("location:../Views/dash.php");
-	
+	header("location:../Views/dashboard.php");	
 }
 ?>

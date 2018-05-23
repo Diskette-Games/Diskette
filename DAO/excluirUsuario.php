@@ -10,5 +10,5 @@ $sql = "DELETE FROM `diskette`.`criar_usuario` WHERE `id_usu`= '".$codigo."'";
 $banco = new ConexaoBanco();
 $banco->executeQuery($sql);
 
-header("location:../Views/listarclientes.php");
+header("location:../Views/dashboard.php");
 ?>

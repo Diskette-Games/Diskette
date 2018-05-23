@@ -27,7 +27,7 @@
 									<li>
 										<a href="#">Conteúdo</a>
 										<ul>
-											<li><a href="chaves.php">Chave grátis</a></li>
+											<li><a href="../DAO/login.php">Chave grátis</a></li>
 											<li><a href="#">Lançamentos</a></li>
 											<li><a href="#">Bugs de Jogos</a></li>
 											<li>
@@ -39,11 +39,11 @@
 													<li><a href="https://www.g2a.com/">G2A</a></li>
 												</ul>
 											</li>
-											<li><a href="#">Planejamento</a></li>
+											<li><a href="../DAO/login.php">Planejamento</a></li>
 										</ul>
 									</li>
-									<li><a href="left-sidebar.html">Votações</a></li>
-									<li><a href="right-sidebar.html">Sobre</a></li>
+									<li><a href="../DAO/login.php">Votações</a></li>
+									<li><a href="#">Sobre</a></li>
 									<li><a href="create.php">Cadastre-se</a></li>
 								</ul>
 							</nav>

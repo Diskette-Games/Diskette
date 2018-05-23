@@ -1,6 +1,3 @@
-<?php
-include '../DAO/acessoLogin.php';
-?>
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -85,7 +82,7 @@ include '../DAO/acessoLogin.php';
 								  	</div>
 
 								  	<div class="b5 w3-col m3 w3-center">
-								  		<p><label>Confirmação:</label><input maxlength="15" onfocus="confirmarSenha()" type="password" class="ajusteBaixo" required="" name="conSenha" id="conSenha" placeholder="********"></p>
+								  		<p><label>Confirmação:</label><input maxlength="15" type="password" class="ajusteBaixo" required="" name="conSenha" id="conSenha" placeholder="********"></p>
 								  </div>
 								</div>	
 
@@ -136,7 +133,7 @@ include '../DAO/acessoLogin.php';
 				</div>
 		</div>
 
-		<!-- Scripts -->
+			<!-- Scripts -->
 			<script src="../assets/js/jquery.min.js"></script>
 			<script src="../assets/js/jquery.dropotron.min.js"></script>
 			<script src="../assets/js/jquery.scrolly.min.js"></script>
