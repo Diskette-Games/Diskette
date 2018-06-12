@@ -15,3 +15,4 @@ if ($controle == 1) {
 }
 
 $todosusuarios = $banco->executeQuery($sql);
+$SelectEdit = $banco->executeQuery($sql);

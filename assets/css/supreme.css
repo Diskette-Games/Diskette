@@ -157,14 +157,22 @@ textarea{
 }
 @media only screen and (min-height: 663px) {
     .disketteIMG{
-        margin-top: 12px !important;
+        margin-top: -17px !important;
         width: 17%;
     }
     .disketteCHAR{
     	margin-top: -50px;
-    	margin-left: 35px;
+    	margin-left: 45px;
     }
 }
-
-
-
+.femi{
+	height: 48px;
+	width: 48px !important;
+	margin-top: 5px; 
+}
+.infoNome{
+	margin-top: -5px;
+}
+.infoEmail{
+	margin-top: -4px;
+}

@@ -50,7 +50,7 @@ include_once '../DAO/acessoSelectUsuario.php';
                         </div>
                     </div>
                 </div>
-                <p class="centro">Carregando Seu Salve...</p>
+                <p class="centro">Alterando Seu Password...</p>
             </div>
         </div>
         <!-- #FIM-->    
@@ -70,8 +70,8 @@ include_once '../DAO/acessoSelectUsuario.php';
         <nav class="navbar">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
-                    <a href="javascript:void(0);" class="bars"></a>
+                    <a href="" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                    <a href="" class="bars"></a>
                     <div class="search-bar adjuste">
                         <img class="disketteIMG" src="../assets/css/images/Logo04.png">
                         <h2 class="disketteCHAR">Diskette</h2>
@@ -80,7 +80,7 @@ include_once '../DAO/acessoSelectUsuario.php';
                 <div class="collapse navbar-collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Call Search -->
-                        <li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li>
+                        <li><a href="" class="js-search" data-close="true"><i class="material-icons">search</i></a></li>
                         <!-- #END# Call Search -->
                         
                         
@@ -98,18 +98,18 @@ include_once '../DAO/acessoSelectUsuario.php';
                         <?php if ($sexo == "M") {
                             echo "<img src=\"../assets/dashboard/images/user.png\" width=\"48\" height=\"48\" alt=\"Usuario\" />";
                         }else {
-                            echo "<img src=\"../images/faces-clipart/pic-3.png\" width=\"48\" height=\"48\" alt=\"Usuario\" />";
+                            echo "<img src=\"../images/faces-clipart/pic-3.png\" class=\"femi\" width=\"48\" height=\"48\" alt=\"Usuario\" />";
                         } ?>
                     </div>
                     <div class="info-container">
-                        <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo $nometag; ?></div>
-                        <div class="email"><?php echo $email; ?></div>
+                        <div class="name infoNome" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo $nometag; ?></div>
+                        <div class="email infoEmail"><?php echo $email; ?></div>
                         <div class="btn-group user-helper-dropdown">
                             <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                             <ul class="dropdown-menu pull-right">
-                                <li><a href="javascript:void(0);"><i class="material-icons">person</i>Perfil</a></li>
+                                <li><a href=""><i class="material-icons">person</i>Perfil</a></li>
                                 <li role="seperator" class="divider"></li>
-                                <li><a href="javascript:void(0);"><i class="material-icons">favorite</i>Sobre o Sistema</a></li>
+                                <li><a href=""><i class="material-icons">favorite</i>Sobre o Sistema</a></li>
                                 <li role="seperator" class="divider"></li>
                                 <li><a href="../conexao/fecharSession.php"><i class="material-icons">input</i>Sair</a></li>
                             </ul>
@@ -132,22 +132,30 @@ include_once '../DAO/acessoSelectUsuario.php';
                                 <span>Perfil</span>
                             </a>
                             <ul class="ml-menu">
-                                <li>
-                                    <a href="pages/forms/basic-form-elements.html">Alterar Informações</a>
-                                </li>
-                                <li>
-                                    <a href="pages/forms/advanced-form-elements.html">Alterar Senha</a>
+                                <li>                                    
+                                    <?php
+                                        if ($controle == 2) {
+                                            
+                                            while ($linha = mysqli_fetch_array($SelectEdit)) {                                                                                     
+                                                echo "<a href=\"editarUsuario.php?id_usu=$linha[id_usu]&nome_usu=$linha[nome_usu]&sobrenome=$linha[sobrenome_usu]&nametag=$linha[name_tag]&pais=$linha[pais_usu]&cpf=$linha[cpf]&celular=$linha[celular]&email=$linha[email_usu]&biografia_usu=$linha[biografia_usu]\">Alterar Informações</a>";
+                                            
+                                                echo "</li>";
+                                                echo "<li>";                                                                                                           
+                                                echo "<a href=\"alterarSenha.php?id_usu=$linha[id_usu]&nametag=$linha[name_tag]\">Alterar Senha</a>";
+                                            }
+                                        }
+                                     ?>
                                 </li>                           
                             </ul>
                         </li>
                         <li>
-                            <a href="pages/typography.html">
+                            <a href="">
                                 <i class="material-icons">videogame_asset</i>
                                 <span>Meus Jogos</span>
                             </a>
                         </li>
                         <li>
-                            <a href="pages/helper-classes.html">
+                            <a href="">
                                 <i class="material-icons">layers</i>
                                 <span>Jogos Grátis</span>
                             </a>
@@ -166,10 +174,10 @@ include_once '../DAO/acessoSelectUsuario.php';
                             </a>
                             <ul class="ml-menu">
                                 <li>
-                                    <a href="pages/ui/alerts.html">Eventos</a>
+                                    <a href="">Eventos</a>
                                 </li>
                                 <li>
-                                    <a href="pages/ui/animations.html">Planejamentos</a>
+                                    <a href="">Planejamentos</a>
                                 </li>                            
                             </ul>
                         </li>                    
@@ -180,25 +188,25 @@ include_once '../DAO/acessoSelectUsuario.php';
                             </a>
                             <ul class="ml-menu">
                                 <li>
-                                    <a href="pages/tables/normal-tables.html">IPTI</a>
+                                    <a href="">IPTI</a>
                                 </li>
                                 <li>
-                                    <a href="pages/tables/jquery-datatable.html">Vazio</a>
+                                    <a href="">Vazio</a>
                                 </li>
                                 <li>
-                                    <a href="pages/tables/editable-table.html">Vazio</a>
+                                    <a href="">Vazio</a>
                                 </li>
                             </ul>
                         </li>                    
                         <li class="header">Siga-nos</li>
                         <li>
-                            <a href="javascript:void(0);">
+                            <a href="">
                                 <i class="material-icons col-light-blue">offline_pin</i>
                                 <span>Facebook</span>
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:void(0);">
+                            <a href="">
                                 <i class="material-icons col-light-blue">offline_pin</i>
                                 <span>Twitter</span>
                             </a>
@@ -363,19 +371,19 @@ include_once '../DAO/acessoSelectUsuario.php';
                                 <h2>Tabela de Dados</h2>
                                 <ul class="header-dropdown m-r--5">
                                     <li class="dropdown">
-                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                             <i class="material-icons">more_vert</i>
                                         </a>
                                         <?php 
                                           if ($controle == 1) {
                                             echo "<ul class=\"dropdown-menu pull-right\">
-                                            <li><a href=\"javascript:void(0);\">Pesquisar Por ID</a></li>
-                                            <li><a href=\"javascript:void(0);\">Pesquisar Por Nome</a></li>
-                                            <li><a href=\"javascript:void(0);\">Pesquisar Por E-mail</a></li>
+                                            <li><a href=\"\">Pesquisar Por ID</a></li>
+                                            <li><a href=\"\">Pesquisar Por Nome</a></li>
+                                            <li><a href=\"\">Pesquisar Por E-mail</a></li>
                                             </ul>";                                    
                                           }else{
                                             echo "<ul class=\"dropdown-menu pull-right\">
-                                            <li><a href=\"javascript:void(0);\">Atualizar Página</a></li>
+                                            <li><a href=\"\">Atualizar Página</a></li>
                                             </ul>";  
                                             }
                                         ?>                                    

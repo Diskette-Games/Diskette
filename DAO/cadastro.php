@@ -30,14 +30,14 @@ if ($conSenha == $senha) {
 		<script>
 			var x;
 			alertify.error('Senha Incorreta');
-			var r=confirm('Senhas não conferem, Digite uma senha Valida!');
+			var r=confirm('Senhas não conferem, Digite uma senha Valida!');	
 			if (r==true)
 			  {
 			  	window.location.href = 'http://localhost/diskette/views/create.php';
 			  }
 			else
 			  {
-			  	window.location.href = 'http://localhost/diskette/views/index.php';
+			  	window.location.href = 'http://localhost/diskette.com/views/dashboard.php';
 			  }
 		</script>
 	";
